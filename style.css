@@ -1,0 +1,199 @@
+/* Reset some basic elements */
+body, h1, h2, p, ul, form, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling for home page */
+body.home {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Body styling for login, signup, and feedback pages */
+body.login, body.signup, body.feedback {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9f43;
+}
+
+/* Main content styling for home page */
+body.home main {
+    text-align: center;
+    padding: 20px;
+}
+
+body.home main h2 {
+    margin-bottom: 20px;
+    color: #ff6b6b;
+    font-size: 24px;
+}
+
+body.home main p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+body.home main figure {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+body.home main img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+body.home main figcaption {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Main content styling for login, signup, and feedback pages */
+body.login main, body.signup main, body.feedback main {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+body.login main h2, body.signup main h2, body.feedback main h2 {
+    margin-bottom: 20px;
+    color: #ff6b6b;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff9f43;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.success {
+    color: green;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    body.home main figure {
+        width: 95%;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+
+    input[type="text"] {
+        width: 80%;
+    }
+}
